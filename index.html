@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Ali's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/vendor/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One|Josefin+Slab' rel='stylesheet' type='text/css'>
+<!--Handlebars for About-->
+    <script id="about-template" type="text/x-handlebars-template">
+      <span class="clearfix" data-image="{{image}}">
+        <img id="about-Temp" src="{{image}}">
+      </span>
+    </script>
+<!--Handlebars for Skill-->
+    <script id="skills-template" type="text/x-handlebars-template">
+      <span class="clearfix" data-image="{{image}}">
+        <img id="skills-Temp" src="{{image}}">
+      </span>
+    </script>
+<!--Handlebars for Contact-->
+    <script id="contact-template" type="text/x-handlebars-template">
+      <span class="clearfix" data-image="{{image}}">
+        <img id="contact-Temp" src="{{image}}">
+      </span>
+    </script>
+  </head>
+  <body>
+    <header class="clearfix">
+     <section class="head">
+      <h1>Alegria "Ali" Forman || Full Stack Developer</h1>
+      <img id="pic" src="images/23.jpg" class="expand">
+     </section>
+    </header>
+
+<!--Main nav-->
+   <nav class="main-nav">
+    <div id="hamburger-bun"> <img id="burger" src="images/hamburger.png"></div>
+      <ul>
+        <li class="tab"><a href="/about" id="my-about">About</a></li>
+        <li class="tab"><a href="/skills" id="my-skills">Skills</a></li>
+        <li class="tab"><span><a href="http://timali4man.com/gopherGame/start.html" target="_blank">Gopher Game  |  </a></span>
+          <span><a href="http://timali4man.com/MuseConcert.html" target="_blank">Muse Concert</a></span></li>
+        <li class="tab"><a href="/contact" id="my-contact">Contact</a></li>
+      </ul>
+  </nav>
+<!--About info-->
+  <main>
+    <section id="about">
+      <p>
+        I am a full-stack web developer student at Code Fellows based in Seattle.
+        I have done various projects from creating websites and games. Find out
+        how I can assist you with your business and contact me.
+      </p>
+      <p>
+        I like to travel, go for hikes, fond of sports, adore realist and
+        impressionist paintings and enjoy reading classic books. Previously hiked
+        Hurricane Ridge. I am an avid fan of Oscar Wilde.
+      </p>
+      </section>
+    <!--Skills info-->
+      <section id="skills">
+        <p>
+          <ul id="language" style="list-style-type:none">
+            <li>&#10003 HTML5</li>
+            <li>&#10003 CSS/Sass</li>
+            <li>&#10003 Javascript/JQuery/JSON/Ajax</li>
+            <li>&#10003 SQL</li>
+          </ul>
+        </p>
+      </section>
+    <!--Contact info-->
+      <section id="contact">
+        <ul>
+          <li>Email:aforman@gmail.com</li>
+          <li>Phone:(206) 123-4567</li>
+          <li><a href="https://twitter.com/JeremyClarkson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <img src="images/twitter_followers.png"> AliForman@PerfectMay</img></a></li>
+        </ul>
+      </section>
+  <!--Insertion of images-->
+      <span id="about-div"></span>
+      <span id="skills-div"></span>
+      <span id="contact-div"></span>
+    </main>
+    <footer>
+     <p>&copy;ali</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/startController.js"></script>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/portfolioFunc.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/skillsController.js"></script>
+    <script src="scripts/contactController.js"></script>
+    <script src="scripts/route.js"></script>
+  </body>
+</html>

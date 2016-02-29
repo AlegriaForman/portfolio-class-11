@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "class-08 - deleted portfolio.css and creat base and layout. - enhance the RWD. - deleted, added and formatted some images. - deleted and moved js, css and images folders and files.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlegriaForman/portfolio.git"
+  },
+  "author": "Ali Forman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-request-proxy": "^1.0.10"
+  }
+}
