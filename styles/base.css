@@ -4,40 +4,33 @@ body {
   color: white;
   position: relative;
 }
-
 header {
   margin: 0;
   text-align: center;
   color: white;
 }
-
 p {
   padding: 10px 20px 0 20px;
   font-size: 1.1em;
 }
-
 h1 {
   text-align: center;
   font-size: 120%;
 }
-
 a {
   text-decoration: none;
   color: white;
   font-size: .8em;
 }
-
 footer {
   font-size: 1.5em;
   position: 400px 200px;
 }
-
 ul {
   padding: 0;
   list-style: none;
   text-align: center;
 }
-
 span > img {
   display: block;
   margin: 0;
@@ -45,7 +38,6 @@ span > img {
   height: auto;
   padding-left: 30%
 }
-
 .clearfix {
   clear: both;
 }
